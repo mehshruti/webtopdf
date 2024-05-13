@@ -7,7 +7,7 @@ const ViewPage = () => {
     <div className='viewPage-container'>
       <div className="messageBox">
         <div className="fileUploadWrapper">
-          <label htmlFor="file">
+          <label >
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 337 337">
               <circle
                 strokeWidth="20"
@@ -30,7 +30,7 @@ const ViewPage = () => {
                 d="M79 167.138H259"
               ></path>
             </svg>
-            <span className="tooltip">Add an image</span>
+            {/* <span className="tooltip">Add an image</span> */}
           </label>
           <input type="file" id="file" name="file" />
         </div>
