@@ -1,0 +1,189 @@
+.viewPage-container {
+    background-image: url('../images/view-2.jpg');
+    height: 700px;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+    /* opacity: 0.7; */
+    align-content: center;
+}
+
+.viewPage-container h1 {
+    font-size: 3rem; 
+}
+.messageBox {
+    width: fit-content;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    background-color: #2d2d2d;
+    padding: 0 34px;
+    width: 700px;
+    border-radius: 14px;
+    border: 1px solid rgb(63, 63, 63);
+  }
+  .messageBox:focus-within {
+    border: 2px solid rgba(0, 255, 115, 0.692);
+  }
+  .fileUploadWrapper {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Play;
+  }
+  
+  #file {
+    display: none;
+  }
+  .fileUploadWrapper label {
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .fileUploadWrapper label svg {
+    height: 20px;
+  }
+  .fileUploadWrapper label svg path {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+  .fileUploadWrapper label svg circle {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+  .fileUploadWrapper label:hover svg path {
+    stroke: #fff;
+  }
+  .fileUploadWrapper label:hover svg circle {
+    stroke: #fff;
+    fill: #3c3c3c;
+  }
+  .fileUploadWrapper label:hover .tooltip {
+    display: block;
+    opacity: 1;
+  }
+  .tooltip {
+    position: absolute;
+    top: -40px;
+    display: none;
+    opacity: 0;
+    color: white;
+    font-size: 12px;
+    text-wrap: nowrap;
+    background-color: #000;
+    padding: 6px 10px;
+    border: 1px solid #3600b4;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.596);
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+  #messageInput {
+    height: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    font-family: Play;
+    font-size: 16px;
+    font-size: x-large;
+    font-family: poppins;
+    margin-top: 1px;
+    margin-left: 16px;
+    width: 630px;
+    padding-right:28px ;
+  }
+  #messageInput:focus ~ #sendButton svg path,
+  #messageInput:valid ~ #sendButton svg path {
+    fill: #3c3c3c;
+    stroke: #00ff6a;
+  }
+  
+  #sendButton {
+    width: fit-content;
+    height: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+  #sendButton svg {
+    height: 20px;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+  #sendButton svg path {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+  #sendButton:hover svg path {
+    fill: #3c3c3c;
+    stroke: #00ff6a;
+  }
+  .viewPage-container {
+    background-image: url('../images/view-2.jpg');
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.messageBox {
+    display: flex;
+    align-items: center;
+    background-color: #2d2d2d;
+    padding: 20px;
+    border-radius: 14px;
+    border: 1px solid rgb(63, 63, 63);
+    max-width: 90%;
+}
+
+.fileUploadWrapper {
+    margin-right: 20px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+input[type="text"] {
+    flex: 1;
+    height: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+
+#sendButton {
+    margin-left: 20px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
